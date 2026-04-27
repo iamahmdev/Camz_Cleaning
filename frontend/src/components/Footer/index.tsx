@@ -44,6 +44,7 @@ export function Footer() {
               <li key={item.label}>
                 <Link
                   to={`/booking/${item.service}`}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   className="opacity-70 hover:opacity-100 hover:text-soft-blue transition-all"
                 >
                   {item.label}
@@ -67,6 +68,7 @@ export function Footer() {
               <li key={item.label}>
                 <Link
                   to={item.to}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   className="opacity-70 hover:opacity-100 hover:text-soft-blue transition-all"
                 >
                   {item.label}
